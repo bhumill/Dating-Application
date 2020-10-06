@@ -1,0 +1,90 @@
+body{background-image:url("../images/bg-img.jpg");background-size: cover;}
+
+.jumbotron{height: 610px;padding-bottom:10px !important;margin-bottom:10px !important;background:none !important;}
+.navbar-header a{color:#ffffff !important;}
+.jumbotron p{color:#fff;}
+.jumbotron h1{color:#fff;}
+.top-mar h1{margin-top:1.5em !important;text-align:center;}
+nav{background:#000000 !important; border-radius:0px !important;}
+.navbar-inverse{border-color: none !important;border:none !important;}
+
+/*Sign up form code starts*/
+
+
+#form1 {
+  padding: 15px;
+  border: 1px solid #666;
+  background: #fff;
+  display: none;
+  margin-top: 10px;
+border-radius: 5px;
+background: darkseagreen;
+}
+.shadow-sm{text-align: center;
+border: 1px solid #f1f1f1;
+padding: 20px;
+margin-bottom: 10px;}
+.shadow-sm img{
+width: 200px;
+border-radius: 50%;
+height: 200px;}
+.profile-bg{
+  background: #ffffff !important;
+}
+.wrapper{ width: 550px;
+  padding: 20px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  margin-top:3%;
+  margin-bottom:5%;
+  backdrop-filter: blur(5px);
+}
+.wrapper h2, p{color:#fff;}
+.footer-bg{background: #000;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0 0 0 !important;margin-top:20px;
+  position:fixed;
+}
+
+footer p{color:#ffffff !important;}
+.form-group label{color:#fff;}
+.form-group{color:#fff;}
+.form-group input{background: #ffffff !important;}
+.btn-primary{color:#000;}
+
+.btn-primary:hover{color:#000;}
+
+.user-profile img{width: 300px !important;}
+.navbar-brand{
+  width: 202px;
+  margin-top: -30px;
+
+}
+
+.navbar-brand > img {
+  display: block;
+  width: 125px;
+}
+.bg-light{margin-top:4%;}
+
+.view-user-bg{background: #ffffff;margin-top: 4%;
+  padding: 10px;}
+.sign-up-color > p > a{
+  color: aqua;
+  font-weight: bold;
+}
+
+.message-bg{background: #ffffff;margin-top: 4%;
+  padding: 10px;}
+
+.profile-form h2, p{color:#000000;}
+.color-bg{color:#000 !important;}
+
+.form-group input{background: #E8F0FE !important;}
+.sign-up-color p{color:#ffffff;}
+
+
+.wink-box{text-align: center;
+color:red;
+font-weight: bold;}
