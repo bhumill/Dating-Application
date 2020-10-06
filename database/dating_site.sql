@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 06, 2020 at 05:02 AM
+-- Generation Time: Oct 06, 2020 at 06:27 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `message` (
   `time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`chat_id`),
   KEY `TO_USER_ID` (`user_id`,`to_user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `message`
@@ -72,7 +72,9 @@ INSERT INTO `message` (`chat_id`, `user_id`, `to_user_id`, `message`, `time`) VA
 (10, 5, 7, 'hello there!!', '2020-10-06 02:37:14'),
 (11, 7, 5, 'nice dp!', '2020-10-06 02:38:47'),
 (12, 5, 7, 'Thanks!!', '2020-10-06 02:40:50'),
-(13, 5, 7, 'you have cute smile! :-)', '2020-10-06 02:41:49');
+(13, 5, 7, 'you have cute smile! :-)', '2020-10-06 02:41:49'),
+(14, 8, 5, 'hello there!!', '2020-10-06 04:24:30'),
+(15, 5, 8, 'hii!!', '2020-10-06 04:25:21');
 
 -- --------------------------------------------------------
 
@@ -95,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `regular` char(1) NOT NULL,
   `join_date` date NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
@@ -107,7 +109,8 @@ INSERT INTO `user` (`user_id`, `email`, `password`, `first_name`, `last_name`, `
 (3, 'ankush.s2123@gmail.com', 'ankush', 'dhruv', 'chopra', '2009-02-02', 'm', 'MONTREAL', 'Quebec', 'insurance.jpg', 'y', '2020-10-04'),
 (4, 'chrislu778@gmail.com', 'christ', 'christine', 'luisa', '1996-03-21', 'f', 'Toronto', 'Ontario', 'logo.png', 'n', '2020-10-04'),
 (5, 'bhumil.15beceg048@gmail.com', 'bhumil1212', 'Bhumil', 'Lakhtariya', '1996-12-12', 'm', 'montreal', 'Quebec', '99ADAD6F-7046-4170-AEC8-373A554303D7.jpg', 'n', '2020-10-05'),
-(7, 'kanchanagrawal@gmail.com', 'kanchan1212', 'Kanchan', 'Agrawal', '1997-12-05', 'f', 'montreal', 'Quebec', 'download.jpg', 'n', '2020-10-05');
+(7, 'kanchanagrawal@gmail.com', 'kanchan1212', 'Kanchan', 'Agrawal', '1997-12-05', 'f', 'montreal', 'Quebec', 'download.jpg', 'n', '2020-10-05'),
+(8, 'ananyapatel@gmail.com', 'ananya1212', 'Ananya', 'Patel', '1997-12-11', 'f', 'montreal', 'Quebec', 'download (1).jpg', 'n', '2020-10-06');
 
 -- --------------------------------------------------------
 
@@ -122,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `wink` (
   `user2_id` int(11) NOT NULL,
   PRIMARY KEY (`wink_id`),
   KEY `USER_ID` (`user_id`,`user2_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `wink`
@@ -133,7 +136,9 @@ INSERT INTO `wink` (`wink_id`, `user_id`, `user2_id`) VALUES
 (2, 1, 4),
 (3, 4, 2),
 (5, 5, 7),
-(4, 7, 5);
+(7, 5, 8),
+(4, 7, 5),
+(6, 8, 5);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

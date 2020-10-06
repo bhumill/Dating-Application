@@ -51,8 +51,8 @@ EMAIL :- bhumil.15beceg048@gmail.com
 PASSWORD :- bhumil1212
 
 2)ACCOUNT : FEMALE
-EMAIL :- kanchanagrawal@gmail.com
-PASSWORD :- kanchan1212
+EMAIL :- ananyapatel@gmail.com
+PASSWORD :- ananya1212
 
 
 # SEE THE WORKING FUNCTIONALITY OF OUR PROJECT
